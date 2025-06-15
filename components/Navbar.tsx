@@ -2,7 +2,6 @@
 import { easeInOut, useMotionValueEvent, useScroll } from "framer-motion"
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { div } from "framer-motion/client"
 import Image from "next/image"
 import Link from "next/link"
 import { MoonStar } from "lucide-react"
@@ -13,7 +12,7 @@ export default function Navbar() {
     const [hovered, setHovered] = useState<number | null>(null)
     const navArr = ["Home", "About", "Projects"]
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log(latest)
+        // console.log(latest)
         if (latest > 30) {
             setScrolled(false)
         } else {
@@ -21,9 +20,9 @@ export default function Navbar() {
         }
     })
 
-    return <motion.nav initial={{y:-10,opacity:0}} transition={{ duration: 0.3, ease: easeInOut }} animate={{ width: scrolled ? "100%" : "50%", y: scrolled ? 3 : 16,opacity:1 }} className={`${scrolled ? "rounded-md" : "rounded-full"}   mx-auto sticky top-2  backdrop-grayscale-75 backdrop-blur-xs  z-1 h-14 bg-black/30   border-[1px] border-white/20 `}>
+    return <motion.nav initial={{y:-10,opacity:0}} transition={{ duration: 0.3, ease: easeInOut }} animate={{ width: scrolled ? "100%" : ["100%","lg:50%"], y: scrolled ? 3 : 16,opacity:1 }} className={`${scrolled ? "rounded-full lg:rounded-md" : "rounded-full"}   mx-auto sticky top-2  backdrop-grayscale-75 backdrop-blur-xs  z-1 h-14 bg-black/30   border-[1px] border-white/20 `}>
         <div className={`flex justify-between pl-1 pr-4 items-center h-full w-full`}>
-            <Image src={'/images/profile pic.jpg'} width={50} height={50} alt="taranpreet-img" className={`${scrolled ? "rounded-xs" : "rounded-full"}`} />
+            <Image src={'/images/profile pic.jpg'} width={50} height={50} alt="taranpreet-img" className={`${scrolled ? "rounded-full lg:rounded-xs" : "rounded-full"}`} />
             <div className="flex items-center divide-x-1 divide-white/30 ">
                 <div className="flex -gap-2 pr-2 ">
                 {

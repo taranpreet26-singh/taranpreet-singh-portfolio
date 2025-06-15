@@ -8,10 +8,10 @@ type IntroType = {
 }
 export default function Intro({ name, shortIntro }: IntroType) {
     return <motion.section className="my-16">
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-4xl lg:text-6xl text-justify font-bold">
             Hi, I'm {name}
         </h1>
-        <p className="text-lg mt-6">
+        <p className="text-md lg:text-lg mt-6">
             {shortIntro}
         </p>
         <div className="w-1/2 flex gap-4">
