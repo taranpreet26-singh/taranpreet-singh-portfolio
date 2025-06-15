@@ -10,11 +10,11 @@ import Lenis from "lenis";
 import { useEffect, useState } from "react";
 export default function Home() {
   const [lenis,setLenis] = useState<Lenis | null>(null)
-    const [rafState,setRafState] = useState<number | null>(null)
+  const [rafState,setRafState] = useState<number | null>(null)
     useEffect(()=>{
       const scroller = new Lenis()
       
-      console.error(lenis,rafState)
+      console.log(lenis,rafState)
   
       function ref(time:any){
         scroller.raf(time)

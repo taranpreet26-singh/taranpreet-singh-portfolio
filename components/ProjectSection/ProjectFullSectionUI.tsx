@@ -1,12 +1,16 @@
 import { useScroll, useTransform, motion,  useMotionTemplate, easeInOut, AnimatePresence } from "framer-motion"
-import { ReactNode, useRef, useState } from "react"
+import { JSX, ReactNode, useRef, useState } from "react"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiNextdotjs, SiPrisma, SiTurborepo } from "react-icons/si"
 
 type features = {
     title: string,
     info: string,
-    content: ReactNode
+    content: ReactNode,
+    tools:{
+        logo:JSX.Element,
+        name:string
+    }[]
 }
 export default function ProjectFullSectionUI({ features }: { features: features }) {
 
@@ -81,7 +85,7 @@ export default function ProjectFullSectionUI({ features }: { features: features 
             </h2>
             <div className="flex flex-wrap gap-1 pl-0 lg:pl-3">
             {
-                logoInfoProjectArr.map((element,index)=>{
+                features.tools.map((element,index)=>{
                     return  <motion.div
                     key={index}
                     layout
@@ -92,8 +96,9 @@ export default function ProjectFullSectionUI({ features }: { features: features 
                         {element.logo}
                         
                     </div>
+                    
                     <div className="block lg:hidden">
-                        {element.content}
+                        {element.name}
                     </div>
                     <AnimatePresence>
                     {
@@ -105,8 +110,8 @@ export default function ProjectFullSectionUI({ features }: { features: features 
                         animate={{opacity:1,width:"auto",marginRight:14}}
                         exit={{opacity:0,width:0,marginRight:0}}
                         transition={{duration:0.5,ease:easeInOut}}
-                        className="hidden lg:block overflow-hidden">
-                        {element.content}
+                        className="hidden text-sm lg:block overflow-hidden">
+                        {element.name}
                         </motion.div> 
                     }
                     </AnimatePresence>
