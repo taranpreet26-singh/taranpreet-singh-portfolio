@@ -125,7 +125,12 @@ export default function ProjectFullSectionUI({ features }: { features: features 
             {features?.content}
             {
                 isOverImageWrapperActive &&
-            <div className="absolute flex items-center justify-center w-full h-full bg-neutral-400/30 rounded-xl inset-0 ">
+            <motion.div 
+            initial={{scale:0,opacity:0}}
+            animate={{scale:1,opacity:1}}
+            transition={{duration:0.7,ease:easeInOut,type:"keyframes"}}
+            exit={{scale:0,opacity:0}}
+            className="absolute flex items-center justify-center w-full h-full bg-neutral-600/30 rounded-xl inset-0 ">
                 
                 {
                     features.githubLink &&
@@ -146,7 +151,7 @@ export default function ProjectFullSectionUI({ features }: { features: features 
                 </div>
                 }
 
-            </div>
+            </motion.div>
             }
             <span className="absolute  mx-auto bottom-0 w-3/4 h-px inset-x-0 bg-gradient-to-r  to-transparent via-white from-transparent"></span>
             <span className="absolute group-hover:opacity-100 opacity-0 mx-auto bottom-0 w-full h-[6px] duration-700 ease-in-out blur-sm inset-x-0 bg-gradient-to-r  to-transparent via-white from-transparent"></span>
