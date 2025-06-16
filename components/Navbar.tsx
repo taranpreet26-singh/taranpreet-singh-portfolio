@@ -4,7 +4,8 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { MoonStar } from "lucide-react"
+import { MoonStar, Sun } from "lucide-react"
+import { useTheme } from "next-themes"
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState<boolean>(true)
@@ -19,6 +20,8 @@ export default function Navbar() {
             setScrolled(true)
         }
     })
+
+    const {theme,setTheme} = useTheme()
 
     return <motion.nav initial={{y:-10,opacity:0}} transition={{ duration: 0.3, ease: easeInOut }} animate={{ width: scrolled ? "100%" : ["100%","lg:50%"], y: scrolled ? 3 : 16,opacity:1 }} className={`${scrolled ? "rounded-full lg:rounded-md" : "rounded-full"}   mx-auto sticky top-2  backdrop-grayscale-75 backdrop-blur-xs  z-1 h-14 bg-black/30   border-[1px] border-white/20 `}>
         <div className={`flex justify-between pl-1 pr-4 items-center h-full w-full`}>
@@ -40,10 +43,11 @@ export default function Navbar() {
                     })
                 }
                 </div>
-                <div className="pl-2">
-                {
-                    <MoonStar/>
-                }
+                <div className="pl-2" onClick={()=>{setTheme(theme==="dark"?"light":"dark")}}>
+                    {
+                        theme === "dark"?<Sun/>:<MoonStar/>
+                    }
+                
                 </div>
             </div>
         </div>

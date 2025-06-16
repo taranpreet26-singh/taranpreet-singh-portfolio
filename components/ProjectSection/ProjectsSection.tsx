@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import ProjectFullSectionUI from "./ProjectFullSectionUI"
 import { motion } from "framer-motion"
@@ -144,7 +145,7 @@ export default function ProjectSection() {
     ]
 
     return <motion.section>
-        <div className="flex flex-col w-full h-full gap-10 lg:gap-30">
+        <div className="flex flex-col w-full h-full ">
             {
                 projectsArr.map((element, index) => {
                     return <ProjectFullSectionUI key={index} features={element} />
