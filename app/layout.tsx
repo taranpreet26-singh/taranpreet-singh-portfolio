@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} dark:bg-["#171717"] bg-["#ffffff"]   antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable}  transition-all duration-1000 ease-in-out dark:bg-["#171717"] bg-["#ffffff"]   antialiased `}
       > 
       <LenisScroller>
            <ThemeProvider
