@@ -15,96 +15,13 @@ export default function ProjectSection() {
             ytLink: "https://youtu.be/2TsWZvQURIA",
             info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
             content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
+                <Image width={500} height={300} alt="image" src={'/images/payzure.png'} className="rounded-lg" />
             ),
             tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
+                { logo: <RiTailwindCssFill size={20} />, name: "Tailwind" },
                 { logo: <SiNextdotjs size={20} />, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo  size={20}/>, name: "Turborepo" },
-                { logo: <DiNodejs size={20} />, name: "Node.js" },
-                { logo: <SiExpress  size={20}/>, name: "Express" }
-            ]
-        },
-        {
-            title: "PayZure (RazorPay 2.0)",
-            githubLink: "https://github.com/taranpreet26-singh/Payment-Razorpay-2.0",
-            ytLink: "https://youtu.be/2TsWZvQURIA",
-            info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
-            content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
-            ),
-            tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs  size={20}/>, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo size={20}/>, name: "Turborepo" },
-                { logo: <DiNodejs size={20} />, name: "Node.js" },
-                { logo: <SiExpress size={20} />, name: "Express" }
-            ]
-        },
-        {
-            title: "PayZure (RazorPay 2.0)",
-            githubLink: "https://github.com/taranpreet26-singh/Payment-Razorpay-2.0",
-            ytLink: "https://youtu.be/2TsWZvQURIA",
-            info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
-            content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
-            ),
-            tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs  size={20}/>, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo size={20}/>, name: "Turborepo" },
-                { logo: <DiNodejs size={20} />, name: "Node.js" },
-                { logo: <SiExpress size={20} />, name: "Express" }
-            ]
-        },
-        {
-            title: "PayZure (RazorPay 2.0)",
-            info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
-            content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
-            ),
-             tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs  size={20}/>, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo size={20}/>, name: "Turborepo" },
-                { logo: <DiNodejs size={20} />, name: "Node.js" },
-                { logo: <SiExpress size={20} />, name: "Express" }
-            ]
-        },
-        {
-            title: "PayZure (RazorPay 2.0)",
-            githubLink: "https://github.com/taranpreet26-singh/Payment-Razorpay-2.0",
-            ytLink: "https://youtu.be/2TsWZvQURIA",
-            info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
-            content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
-            ),
-            tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs  size={20}/>, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo size={20}/>, name: "Turborepo" },
-                { logo: <DiNodejs size={20} />, name: "Node.js" },
-                { logo: <SiExpress size={20} />, name: "Express" }
-            ]
-        },
-        {
-            title: "PayZure (RazorPay 2.0)",
-            githubLink: "https://github.com/taranpreet26-singh/Payment-Razorpay-2.0",
-            ytLink: "https://youtu.be/2TsWZvQURIA",
-            info: "It is a full-stack fintech app built with TurboRepo, Next.js, Node.js, Prisma, Tailwind, and NextAuth. It features a scalable monorepo for efficient code sharing across frontend and backend. The system supports secure onramping, P2P transfers, and uses ACID-compliant operations to ensure data integrity. A queuing mechanism handles bulk transactions safely, preventing negative balances. Financial precision is strictly maintained, avoiding rounding errors. The architecture emphasizes performance, scalability, and real-world reliability for modern payment systems.",
-            content: (
-                <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
-            ),
-            tools: [
-                { logo: <RiTailwindCssFill  size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs  size={20}/>, name: "Next.js" },
-                { logo: <SiPrisma  size={20}/>, name: "Prisma" },
-                { logo: <SiTurborepo size={20}/>, name: "Turborepo" },
+                { logo: <SiPrisma size={20} />, name: "Prisma" },
+                { logo: <SiTurborepo size={20} />, name: "Turborepo" },
                 { logo: <DiNodejs size={20} />, name: "Node.js" },
                 { logo: <SiExpress size={20} />, name: "Express" }
             ]
@@ -113,15 +30,15 @@ export default function ProjectSection() {
             title: "Podz (WebRTC)",
             webLink: "https://podz-frontend.vercel.app/",
             githubLink: "https://github.com/taranpreet26-singh/Podz-Frontend",
-            info: "This is podz",
+            info: "Real-Time 1:1 Video Calling Application Developed a Google Meet–inspired web application focused on one-to-one video communication using WebRTC, WebSocket, Next.js, and Node.js. Implemented peer-to-peer connection logic enabling high-quality camera, audio, and screen sharing between two users. Used WebSocket for real-time signaling to exchange offer, answer, and ICE candidates, ensuring seamless media negotiation. Designed robust backend logic to manage room creation and enforce a strict two-user limit per room. The project emphasizes privacy, low latency, and smooth user experience, making it ideal for private virtual meetings or interviews. Ensured cross-browser compatibility and efficient media handling across devices.",
             content: (
                 <div>
-                    <Image width={500} height={300} alt="image" src={'/images/payzure.png'} className="rounded-lg" />
+                    <Image width={500} height={300} alt="image" src={'/images/podz.png'} className="rounded-lg" />
                 </div>
             ),
             tools: [
-                { logo: <RiTailwindCssFill size={20}/>, name: "Tailwind" },
-                { logo: <SiNextdotjs size={20}/>, name: "Next.js" },
+                { logo: <RiTailwindCssFill size={20} />, name: "Tailwind" },
+                { logo: <SiNextdotjs size={20} />, name: "Next.js" },
                 { logo: <DiNodejs size={20} />, name: "Node.js" },
                 { logo: <SiExpress size={20} />, name: "Express" },
                 {
@@ -137,9 +54,24 @@ export default function ProjectSection() {
                     </svg>,
                     name: "Webrtc"
                 }, {
-                    logo: <SiSocketdotio/>,
-                    name:"Websocket"
+                    logo: <SiSocketdotio />,
+                    name: "Websocket"
                 }
+            ]
+        },
+        {
+            title: "BlogSphere",
+            webLink: "https://blog-sphere-blush.vercel.app/",
+            githubLink: "https://github.com/taranpreet26-singh/Frontend-BlogSphere",
+            info: "Developed a fully responsive and scalable blogging platform using React with TypeScript, incorporating modular and reusable components along with React Router for seamless navigation and user experience.Integrated Axios to efficiently handle API requests, enabling smooth communication between the frontend and backend, which is built using Node.js with Express.js to serve RESTful APIs. Implemented Prisma ORM with PostgreSQL, hosted on NeonDB, ensuring optimized database management, efficient query handling, and improved scalability. Applied JWT-based authentication to secure user sessions and implemented Zod validation for robust request validation, ensuring data integrity across all endpoints.",
+            content: (
+                <div>
+                    <Image width={500} height={300} alt="image" src={'/images/blogging.jpg'} className="rounded-lg" />
+                </div>
+            ),
+            tools: [
+                { logo: <RiTailwindCssFill size={20} />, name: "Tailwind" },
+                { logo: <SiNextdotjs size={20} />, name: "Next.js" },
             ]
         }
     ]

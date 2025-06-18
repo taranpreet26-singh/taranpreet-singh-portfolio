@@ -1,11 +1,13 @@
 "use client"
 import { easeInOut, useMotionValueEvent, useScroll } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
-import { MoonStar, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
+import { IoSunny } from "react-icons/io5"
+import { GoSun } from "react-icons/go"
+import { CloudMoonRain, Sunrise } from "lucide-react"
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState<boolean>(true)
@@ -20,8 +22,12 @@ export default function Navbar() {
             setScrolled(true)
         }
     })
-
     const {theme,setTheme} = useTheme()
+
+    useEffect(()=>{
+
+    },[theme])
+
 
     return <motion.nav initial={{y:-10,opacity:0}} transition={{ duration: 0.3, ease: easeInOut }} animate={{ width: scrolled ? "100%" : ["100%","lg:50%"], y: scrolled ? 3 : 16,opacity:1 }} className={`${scrolled ? "rounded-full lg:rounded-md" : "rounded-full"}   mx-auto sticky top-2  backdrop-grayscale-75 backdrop-blur-xs  z-1 h-14 bg-black/30   border-[1px] border-white/20 `}>
         <div className={`flex justify-between pl-1 pr-4 items-center h-full w-full`}>
@@ -43,10 +49,11 @@ export default function Navbar() {
                     })
                 }
                 </div>
+               
                 <div className="pl-2" onClick={()=>{setTheme(theme==="dark"?"light":"dark")}}>
-                    {
-                        theme === "dark"?<Sun/>:<MoonStar/>
-                    }
+                 {
+                    theme ==="light"?<div className=""><CloudMoonRain /></div>:<div><Sunrise/></div>
+                 }
                 
                 </div>
             </div>

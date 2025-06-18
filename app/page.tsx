@@ -2,6 +2,7 @@
 
 import About from "@/components/About";
 import Career from "@/components/Career";
+import Experience from "@/components/Experience";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -17,6 +18,7 @@ export default function Home() {
             shortIntro="A 23-year-old Full Stack Developer with a passion for technology, continuous learning, and building meaningful digital experiences."
           />
           <About />
+          <Experience/>
           <Career />
           <Projects />
         </div>
