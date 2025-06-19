@@ -4,7 +4,6 @@ import ProjectFullSectionUI from "./ProjectFullSectionUI"
 import { motion } from "framer-motion"
 import { RiTailwindCssFill } from "react-icons/ri"
 import { SiExpress, SiNextdotjs, SiPrisma, SiSocketdotio, SiTurborepo } from "react-icons/si"
-import { FaNodeJs } from "react-icons/fa"
 import { DiNodejs } from "react-icons/di"
 
 export default function ProjectSection() {

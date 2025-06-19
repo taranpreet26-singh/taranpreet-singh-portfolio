@@ -6,7 +6,7 @@ import { LuGithub } from "react-icons/lu"
 import { RiGlobalLine } from "react-icons/ri"
 import { Skeleton } from "../ui/skeleton"
 
-type features = {
+export type features = {
     title: string,
     info: string,
     webLink?: string,
@@ -58,7 +58,7 @@ export default function ProjectFullSectionUI({ features }: { features: features 
 
     return <div
         ref={ref}
-        className="grid group grid-cols-1 lg:grid-cols-2 gap-4 w-full h-full pb-16 lg:pb-10">
+        className="grid group grid-cols-1   lg:grid-cols-2 gap-4 w-full h-full pb-16 lg:pb-18">
         <motion.div
             ref={pointerAnimator}
             style={{
@@ -84,7 +84,7 @@ export default function ProjectFullSectionUI({ features }: { features: features 
                         <Skeleton className="h-4 w-[200px] bg-neutral-700 dark:bg-neutral-400" />
                     </div>}
             </motion.h2>
-            <div className="flex justify-between w-full ">
+            <div className="flex flex-col-reverse gap-2  lg:flex-row justify-between w-full ">
 
                 <div className="flex flex-wrap gap-1 pl-0 lg:pl-3">
                     {
@@ -152,8 +152,8 @@ export default function ProjectFullSectionUI({ features }: { features: features 
             className="h-fit  mt-30  relative " onMouseEnter={() => { setImageOverWrapper(true) }} onMouseLeave={() => { setImageOverWrapper(false) }}>
             {features?.content}
            
-            <span className="absolute  mx-auto bottom-0 w-3/4 h-px inset-x-0 bg-gradient-to-r  to-transparent via-white from-transparent"></span>
-            <span className="absolute group-hover:opacity-100 opacity-0 mx-auto bottom-0 w-full h-[6px] duration-700 ease-in-out blur-sm inset-x-0 bg-gradient-to-r  to-transparent via-white from-transparent"></span>
+            <span className="absolute  mx-auto bottom-0 w-3/4 h-[1px] dark:h-px inset-x-0 bg-gradient-to-r  to-transparent dark:via-white via-cyan-400 from-transparent"></span>
+            <span className="absolute group-hover:opacity-100 opacity-0 mx-auto bottom-0 w-full h-[6px] duration-700 ease-in-out blur-sm inset-x-0 bg-gradient-to-r  to-transparent dark:via-white via-cyan-400 from-transparent"></span>
 
         </motion.div>
     </div>

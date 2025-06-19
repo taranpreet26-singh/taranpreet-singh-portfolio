@@ -23,10 +23,10 @@ export default function Home() {
           <Projects />
         </div>
         <motion.div
-          initial={{ opacity: 0, x: 500, y: 200, scale: 0.9 }}
-          animate={{ opacity: 1, x: -400, y: -400, scale: 1.4, zIndex: -1 }}
+          initial={{ opacity: 0, x: -400, y: -400, scale: 0.9 }}
+          animate={{ opacity: 1, x: -400, y: -400, scale: 1.2, zIndex: -1 }}
           transition={{ duration: 2.6, delay: 0.8, ease: easeInOut }}
-          className="animate-spotlight pointer-events-none z-[10] h-[169%] w-[138%] lg:w-[84%] fixed top-0 left-0 md:left-0 md:top-0"
+          className="animate-spotlight pointer-events-none z-[10] hidden md:block h-[169%] w-[138%] lg:w-[84%] fixed top-0 left-0 md:left-0 md:top-0"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
