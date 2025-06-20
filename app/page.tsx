@@ -3,6 +3,7 @@
 import About from "@/components/About";
 import Career from "@/components/Career";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -10,7 +11,7 @@ import { easeInOut, motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <section className="">
+    <section id="home" className="">
         <div className="px-10 md:px-30 lg:px-0 w-full lg:max-w-3xl relative lg:mx-auto h-full">
           <Navbar/>
           <Intro
@@ -21,6 +22,7 @@ export default function Home() {
           <Experience/>
           <Career />
           <Projects />
+          <Footer/>
         </div>
         <motion.div
           initial={{ opacity: 0, x: -400, y: -400, scale: 0.9 }}

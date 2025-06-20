@@ -127,19 +127,19 @@ export default function ProjectFullSectionUI({ features }: { features: features 
                     {
                         features.githubLink &&
                         <div className="bg-white dark:bg-neutral-900 flex items-center dark:hover:bg-neutral-300 transition-all duration-700 hover:scale-110 ease-in-out dark:hover:text-black  hover:bg-neutral-900 hover:text-white  justify-center border-[1px] border-black dark:border-neutral-400/40 p-1  rounded-full">
-                            <a href={`${features?.githubLink}`}><LuGithub size={20} /></a>
+                            <a href={`${features?.githubLink}`} target="_blank"><LuGithub size={20} /></a>
                         </div>
                     }
                     {
                         features.webLink &&
                         <div className="bg-white dark:bg-neutral-900 border-[1px] flex items-center dark:hover:bg-neutral-300 transition-all hover:scale-110 duration-700 ease-in-out dark:hover:text-black  hover:bg-neutral-900 hover:text-white justify-center border-black dark:border-neutral-400/40 p-1  rounded-full">
-                            <a href={`${features?.webLink}`}><RiGlobalLine size={20} /></a>
+                            <a href={`${features?.webLink}`} target="_blank"><RiGlobalLine size={20} /></a>
                         </div>
                     }
                     {
                         features.ytLink &&
                         <div className="bg-white dark:bg-neutral-900  border-[1px] flex items-center dark:hover:bg-neutral-300 transition-all hover:scale-110 duration-700 ease-in-out dark:hover:text-black  hover:bg-neutral-900 hover:text-white justify-center border-black dark:border-neutral-400/40 p-1  rounded-full">
-                            <a href={`${features?.ytLink}`}><CgYoutube size={20} /></a>
+                            <a href={`${features?.ytLink}`} target="_blank"><CgYoutube size={20} /></a>
                         </div>
                     }
                 </div>

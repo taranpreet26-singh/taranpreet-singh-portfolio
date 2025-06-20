@@ -3,19 +3,15 @@ import { easeInOut, useMotionValueEvent, useScroll } from "framer-motion"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import Link from "next/link"
 import { useTheme } from "next-themes"
-import { IoSunny } from "react-icons/io5"
-import { GoSun } from "react-icons/go"
 import { CloudMoonRain, Sunrise } from "lucide-react"
 export default function Navbar() {
 
     const [scrolled, setScrolled] = useState<boolean>(true)
     const { scrollY } = useScroll()
     const [hovered, setHovered] = useState<number | null>(null)
-    const navArr = ["Home", "About", "Projects"]
+    const navArr = ["Home", "About","Experience", "Projects"]
     useMotionValueEvent(scrollY, "change", (latest) => {
-        // console.log(latest)
         if (latest > 30) {
             setScrolled(false)
         } else {
@@ -28,6 +24,15 @@ export default function Navbar() {
 
     }, [theme])
 
+    function handleScrollToSection(id:string){
+        const element = document.getElementById(id.toLowerCase())
+        if(element ){
+            const y = element.getBoundingClientRect().top + window.scrollY - 140
+            window.scroll({top:y,behavior:"smooth"})
+        }
+
+    }
+
 
     return <motion.nav initial={{ y: -10, opacity: 0 }} transition={{ duration: 0.3, ease: easeInOut }} animate={{ width: scrolled ? "100%" : ["100%", "lg:50%"], y: scrolled ? 3 : 16, opacity: 1 }} className={`${scrolled ? "rounded-full lg:rounded-md" : "rounded-full"}   mx-auto sticky top-2  backdrop-grayscale-75 backdrop-blur-xs  z-1 h-14 bg-black/30   border-[1px] border-white/20 `}>
         <div className={`flex justify-between relative z-[10] pl-1 pr-4 items-center h-full w-full`}>
@@ -36,8 +41,8 @@ export default function Navbar() {
                 <div className="flex -gap-2 pr-2 ">
                     {
                         navArr.map((element, index) => {
-                            return <Link href={`/${element}`} key={index}>
-                                <div className={`relative  px-2 py-[2px] `} onMouseEnter={() => { setHovered(index); console.log(index) }} onMouseLeave={() => { setHovered(null) }}>
+                            return <div  key={index}>
+                                <div className={`relative cursor-pointer text-xs lg:text-sm px-2 py-[2px] `} onClick={()=>{handleScrollToSection(element)}} onMouseEnter={() => { setHovered(index); console.log(index) }} onMouseLeave={() => { setHovered(null) }}>
                                     {
                                         hovered === index && <motion.div
                                             layoutId="hovered-span"
@@ -45,7 +50,7 @@ export default function Navbar() {
                                     }
                                     {element}
                                 </div>
-                            </Link>
+                            </div>
                         })
                     }
                 </div>

@@ -60,7 +60,7 @@ export default function Experience() {
             ]
         },
     ]
-    return <div className="mt-8">
+    return <section id="experience" className="mt-8">
         <h1 className="text-xl lg:text-3xl font-extrabold">Experience</h1>
         
         {
@@ -69,5 +69,5 @@ export default function Experience() {
                 features={element}/>
             })
         }
-    </div>
+    </section>
 }
