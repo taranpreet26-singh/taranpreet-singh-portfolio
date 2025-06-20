@@ -48,7 +48,7 @@ export default function Experience() {
             status: "Internship",
             startDate:"24-Dec-2024",
             endDate:"9-April-2025",
-            shortInfo: "Developing a creative and engaging website with seamless frontend integration across various CMS platforms.",
+            shortInfo: "Worked across backend and frontend.Built a responsive and engaging enterprise website using Next.js and Tailwind CSS. Integrated a secure backend with Node.js, Express, and JWT authentication. Focused on clean UI, smooth user experience, and scalable architecture.",
             tools: [
                     { logo: <RiTailwindCssFill size={20} />, name: "Tailwind" },
                     { logo: <SiNextdotjs size={20} />, name: "Next.js" },
