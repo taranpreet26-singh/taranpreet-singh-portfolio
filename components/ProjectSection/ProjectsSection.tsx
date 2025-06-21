@@ -60,8 +60,8 @@ export default function ProjectSection() {
         },
         {
             title: "BlogSphere",
-            webLink: "https://blog-sphere-blush.vercel.app/",
-            githubLink: "https://github.com/taranpreet26-singh/Frontend-BlogSphere",
+            webLink: "https://frontend-blog-sphere-fkg8.vercel.app/",
+            githubLink: "https://github.com/taranpreet26-singh/BlogSphere",
             info: "Developed a fully responsive and scalable blogging platform using React with TypeScript, incorporating modular and reusable components along with React Router for seamless navigation and user experience.Integrated Axios to efficiently handle API requests, enabling smooth communication between the frontend and backend, which is built using Node.js with Express.js to serve RESTful APIs. Implemented Prisma ORM with PostgreSQL, hosted on NeonDB, ensuring optimized database management, efficient query handling, and improved scalability. Applied JWT-based authentication to secure user sessions and implemented Zod validation for robust request validation, ensuring data integrity across all endpoints.",
             content: (
                 <div>

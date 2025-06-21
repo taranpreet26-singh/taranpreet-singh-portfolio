@@ -55,7 +55,7 @@ export default function ExperienceCard({ features }: { features: ExperienceType 
                             initial={{ x: -10, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{ duration: 0.5, ease: easeInOut }}
-                            className="text-green-500/60 lg:text-neutral-500/60">End: {features.startDate}</motion.p>
+                            className="text-green-500/60 lg:text-neutral-500/60">End: {features.endDate}</motion.p>
                     }
                     <motion.p
                         initial={{ x: -10, opacity: 0 }}
