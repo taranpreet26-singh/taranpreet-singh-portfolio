@@ -59,6 +59,22 @@ export default function ProjectSection() {
             ]
         },
         {
+            title: "Every AI",
+            webLink: "https://idler-demo-web.vercel.app/",
+            githubLink: "https://github.com/taranpreet26-singh/Idler-demo",
+            info: "Built with Next.js Tailwind CSS and framer motion A well structured template that is super easy to customize and play with. Modern, Minimal and Clean Design A modern, minimal and clean design that is tastefully filled with microinteractions to keep your users engaged. ",
+            content: (
+                <div>
+                    <Image width={800} height={600} alt="image" src={'/images/idler.png'} className="rounded-lg" />
+                </div>
+            ),
+            tools: [
+                { logo: <RiTailwindCssFill size={20} />, name: "Tailwind" },
+                { logo: <SiNextdotjs size={20} />, name: "Next.js" },
+                {logo:<Image width={20} height={20} src={`/images/framer.webp`} alt="framer-motion" className=""/>, name:"Motion"}
+            ]
+        },
+        {
             title: "BlogSphere",
             webLink: "https://frontend-blog-sphere-fkg8.vercel.app/",
             githubLink: "https://github.com/taranpreet26-singh/BlogSphere",
